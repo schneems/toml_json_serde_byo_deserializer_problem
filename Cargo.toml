@@ -1,0 +1,9 @@
+[package]
+name = "compare_deser"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = "1.0.217"
+serde_json = {version = "1.0.138", optional = true }
+toml = { version = "0.8.20", optional = true }
