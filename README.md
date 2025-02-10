@@ -4,7 +4,10 @@
 
 I want to write an interface that allows people to BYO Deserializer. If I understand correctly, [serde::Deserializer](https://docs.rs/serde/1.0.217/serde/trait.Deserializer.html) is the trait to use for bounds.
 
-I'm able to get this to work with the `toml` crate, but can't figure out how to get it to work with other crates, like `serde_json`. This repo demonstrates that problem.
+I'm able to get this to work with the `toml` crate, but can't figure out how to get it to work with other crates, like `serde_json`. This repo demonstrates that problem. I want:
+
+- To solve my original, high level goal.
+- And, to understand the serde_json code better. I am having a hard time understnading where some constraints and functionality are coming from.
 
 ## Expected
 
