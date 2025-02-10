@@ -22,7 +22,7 @@ fn deserializer_toml<'de>(input: &'de str) -> impl serde::Deserializer<'de> {
 ///            but trait `Deserializer<'_>` is implemented for `&mut serde_json::Deserializer<_>`
 ///    = help: for that trait implementation, expected `&mut serde_json::Deserializer<_>`, found `serde_json::Deserializer<StrRead<'_>>`
 #[cfg(feature = "serde_json")]
-fn deserializer_toml<'de>(input: &'de str) -> impl serde::Deserializer<'de> {
+fn deserializer_json<'de>(input: &'de str) -> impl serde::Deserializer<'de> {
     serde_json::Deserializer::from_str(input)
 }
 
